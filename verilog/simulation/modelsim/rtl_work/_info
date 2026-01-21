@@ -1,0 +1,101 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/elec374/tutorial/simulation/modelsim
+vBiDirectionalBus
+Z1 !s110 1768955541
+!i10b 1
+!s100 hTBT:OQFfH^4i3Xl=@F=@3
+IleV6Y>_>cI1jLb2FkC[Sb3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1768922587
+8C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v
+L0 9
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1768955541.000000
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial
+Z7 tCvgOpt 0
+n@bi@directional@bus
+vDataPath
+R1
+!i10b 1
+!s100 X=m<fb[RHhFGSz8Y4Bzmg1
+I8A48AON@T1MBKzm:OZlkT3
+R2
+R0
+w1768954992
+8C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v
+L0 11
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v|
+!i113 1
+R5
+R6
+R7
+n@data@path
+vedgeRegister
+R1
+!i10b 1
+!s100 6^RNa>i3^4E?E49@?Ol1K1
+Il76[60;c:0jVn2:2X78R<0
+R2
+R0
+w1768922486
+8C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v|
+!i113 1
+R5
+R6
+R7
+nedge@register
+vtutorial_tb
+R1
+!i10b 1
+!s100 z05OzDiFJ>m[_oN0b4]`C2
+IJbhC?AQUkH39cSfXFiT=10
+R2
+R0
+w1768928138
+8C:/intelFPGA_lite/18.1/elec374/tutorial/tutorial_tb.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/tutorial_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/tutorial_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/tutorial_tb.v|
+!i113 1
+R5
+R6
+R7
