@@ -1,0 +1,1755 @@
+|mul32_wave_tb
+
+
+|mul32_wave_tb|Mul32:dut
+clock => busy.CLK
+clock => done~reg0.CLK
+clock => count[0].CLK
+clock => count[1].CLK
+clock => count[2].CLK
+clock => count[3].CLK
+clock => count[4].CLK
+clock => count[5].CLK
+clock => multiplier[0].CLK
+clock => multiplier[1].CLK
+clock => multiplier[2].CLK
+clock => multiplier[3].CLK
+clock => multiplier[4].CLK
+clock => multiplier[5].CLK
+clock => multiplier[6].CLK
+clock => multiplier[7].CLK
+clock => multiplier[8].CLK
+clock => multiplier[9].CLK
+clock => multiplier[10].CLK
+clock => multiplier[11].CLK
+clock => multiplier[12].CLK
+clock => multiplier[13].CLK
+clock => multiplier[14].CLK
+clock => multiplier[15].CLK
+clock => multiplier[16].CLK
+clock => multiplier[17].CLK
+clock => multiplier[18].CLK
+clock => multiplier[19].CLK
+clock => multiplier[20].CLK
+clock => multiplier[21].CLK
+clock => multiplier[22].CLK
+clock => multiplier[23].CLK
+clock => multiplier[24].CLK
+clock => multiplier[25].CLK
+clock => multiplier[26].CLK
+clock => multiplier[27].CLK
+clock => multiplier[28].CLK
+clock => multiplier[29].CLK
+clock => multiplier[30].CLK
+clock => multiplier[31].CLK
+clock => multiplicand[0].CLK
+clock => multiplicand[1].CLK
+clock => multiplicand[2].CLK
+clock => multiplicand[3].CLK
+clock => multiplicand[4].CLK
+clock => multiplicand[5].CLK
+clock => multiplicand[6].CLK
+clock => multiplicand[7].CLK
+clock => multiplicand[8].CLK
+clock => multiplicand[9].CLK
+clock => multiplicand[10].CLK
+clock => multiplicand[11].CLK
+clock => multiplicand[12].CLK
+clock => multiplicand[13].CLK
+clock => multiplicand[14].CLK
+clock => multiplicand[15].CLK
+clock => multiplicand[16].CLK
+clock => multiplicand[17].CLK
+clock => multiplicand[18].CLK
+clock => multiplicand[19].CLK
+clock => multiplicand[20].CLK
+clock => multiplicand[21].CLK
+clock => multiplicand[22].CLK
+clock => multiplicand[23].CLK
+clock => multiplicand[24].CLK
+clock => multiplicand[25].CLK
+clock => multiplicand[26].CLK
+clock => multiplicand[27].CLK
+clock => multiplicand[28].CLK
+clock => multiplicand[29].CLK
+clock => multiplicand[30].CLK
+clock => multiplicand[31].CLK
+clock => Result[0]~reg0.CLK
+clock => Result[1]~reg0.CLK
+clock => Result[2]~reg0.CLK
+clock => Result[3]~reg0.CLK
+clock => Result[4]~reg0.CLK
+clock => Result[5]~reg0.CLK
+clock => Result[6]~reg0.CLK
+clock => Result[7]~reg0.CLK
+clock => Result[8]~reg0.CLK
+clock => Result[9]~reg0.CLK
+clock => Result[10]~reg0.CLK
+clock => Result[11]~reg0.CLK
+clock => Result[12]~reg0.CLK
+clock => Result[13]~reg0.CLK
+clock => Result[14]~reg0.CLK
+clock => Result[15]~reg0.CLK
+clock => Result[16]~reg0.CLK
+clock => Result[17]~reg0.CLK
+clock => Result[18]~reg0.CLK
+clock => Result[19]~reg0.CLK
+clock => Result[20]~reg0.CLK
+clock => Result[21]~reg0.CLK
+clock => Result[22]~reg0.CLK
+clock => Result[23]~reg0.CLK
+clock => Result[24]~reg0.CLK
+clock => Result[25]~reg0.CLK
+clock => Result[26]~reg0.CLK
+clock => Result[27]~reg0.CLK
+clock => Result[28]~reg0.CLK
+clock => Result[29]~reg0.CLK
+clock => Result[30]~reg0.CLK
+clock => Result[31]~reg0.CLK
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => Result.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplicand.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => multiplier.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => count.OUTPUTSELECT
+clear => done.OUTPUTSELECT
+clear => busy.OUTPUTSELECT
+start => always0.IN1
+A[0] => multiplicand.DATAB
+A[1] => multiplicand.DATAB
+A[2] => multiplicand.DATAB
+A[3] => multiplicand.DATAB
+A[4] => multiplicand.DATAB
+A[5] => multiplicand.DATAB
+A[6] => multiplicand.DATAB
+A[7] => multiplicand.DATAB
+A[8] => multiplicand.DATAB
+A[9] => multiplicand.DATAB
+A[10] => multiplicand.DATAB
+A[11] => multiplicand.DATAB
+A[12] => multiplicand.DATAB
+A[13] => multiplicand.DATAB
+A[14] => multiplicand.DATAB
+A[15] => multiplicand.DATAB
+A[16] => multiplicand.DATAB
+A[17] => multiplicand.DATAB
+A[18] => multiplicand.DATAB
+A[19] => multiplicand.DATAB
+A[20] => multiplicand.DATAB
+A[21] => multiplicand.DATAB
+A[22] => multiplicand.DATAB
+A[23] => multiplicand.DATAB
+A[24] => multiplicand.DATAB
+A[25] => multiplicand.DATAB
+A[26] => multiplicand.DATAB
+A[27] => multiplicand.DATAB
+A[28] => multiplicand.DATAB
+A[29] => multiplicand.DATAB
+A[30] => multiplicand.DATAB
+A[31] => multiplicand.DATAB
+B[0] => multiplier.DATAB
+B[1] => multiplier.DATAB
+B[2] => multiplier.DATAB
+B[3] => multiplier.DATAB
+B[4] => multiplier.DATAB
+B[5] => multiplier.DATAB
+B[6] => multiplier.DATAB
+B[7] => multiplier.DATAB
+B[8] => multiplier.DATAB
+B[9] => multiplier.DATAB
+B[10] => multiplier.DATAB
+B[11] => multiplier.DATAB
+B[12] => multiplier.DATAB
+B[13] => multiplier.DATAB
+B[14] => multiplier.DATAB
+B[15] => multiplier.DATAB
+B[16] => multiplier.DATAB
+B[17] => multiplier.DATAB
+B[18] => multiplier.DATAB
+B[19] => multiplier.DATAB
+B[20] => multiplier.DATAB
+B[21] => multiplier.DATAB
+B[22] => multiplier.DATAB
+B[23] => multiplier.DATAB
+B[24] => multiplier.DATAB
+B[25] => multiplier.DATAB
+B[26] => multiplier.DATAB
+B[27] => multiplier.DATAB
+B[28] => multiplier.DATAB
+B[29] => multiplier.DATAB
+B[30] => multiplier.DATAB
+B[31] => multiplier.DATAB
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Result[0] <= Result[0].DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Result[1].DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result[2].DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result[3].DB_MAX_OUTPUT_PORT_TYPE
+Result[4] <= Result[4].DB_MAX_OUTPUT_PORT_TYPE
+Result[5] <= Result[5].DB_MAX_OUTPUT_PORT_TYPE
+Result[6] <= Result[6].DB_MAX_OUTPUT_PORT_TYPE
+Result[7] <= Result[7].DB_MAX_OUTPUT_PORT_TYPE
+Result[8] <= Result[8].DB_MAX_OUTPUT_PORT_TYPE
+Result[9] <= Result[9].DB_MAX_OUTPUT_PORT_TYPE
+Result[10] <= Result[10].DB_MAX_OUTPUT_PORT_TYPE
+Result[11] <= Result[11].DB_MAX_OUTPUT_PORT_TYPE
+Result[12] <= Result[12].DB_MAX_OUTPUT_PORT_TYPE
+Result[13] <= Result[13].DB_MAX_OUTPUT_PORT_TYPE
+Result[14] <= Result[14].DB_MAX_OUTPUT_PORT_TYPE
+Result[15] <= Result[15].DB_MAX_OUTPUT_PORT_TYPE
+Result[16] <= Result[16].DB_MAX_OUTPUT_PORT_TYPE
+Result[17] <= Result[17].DB_MAX_OUTPUT_PORT_TYPE
+Result[18] <= Result[18].DB_MAX_OUTPUT_PORT_TYPE
+Result[19] <= Result[19].DB_MAX_OUTPUT_PORT_TYPE
+Result[20] <= Result[20].DB_MAX_OUTPUT_PORT_TYPE
+Result[21] <= Result[21].DB_MAX_OUTPUT_PORT_TYPE
+Result[22] <= Result[22].DB_MAX_OUTPUT_PORT_TYPE
+Result[23] <= Result[23].DB_MAX_OUTPUT_PORT_TYPE
+Result[24] <= Result[24].DB_MAX_OUTPUT_PORT_TYPE
+Result[25] <= Result[25].DB_MAX_OUTPUT_PORT_TYPE
+Result[26] <= Result[26].DB_MAX_OUTPUT_PORT_TYPE
+Result[27] <= Result[27].DB_MAX_OUTPUT_PORT_TYPE
+Result[28] <= Result[28].DB_MAX_OUTPUT_PORT_TYPE
+Result[29] <= Result[29].DB_MAX_OUTPUT_PORT_TYPE
+Result[30] <= Result[30].DB_MAX_OUTPUT_PORT_TYPE
+Result[31] <= Result[31].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca
+A[0] => A[0].IN3
+A[1] => A[1].IN3
+A[2] => A[2].IN3
+A[3] => A[3].IN3
+A[4] => A[4].IN3
+A[5] => A[5].IN3
+A[6] => A[6].IN3
+A[7] => A[7].IN3
+A[8] => A[8].IN3
+A[9] => A[9].IN3
+A[10] => A[10].IN3
+A[11] => A[11].IN3
+A[12] => A[12].IN3
+A[13] => A[13].IN3
+A[14] => A[14].IN3
+A[15] => A[15].IN3
+A[16] => A[16].IN3
+A[17] => A[17].IN3
+A[18] => A[18].IN3
+A[19] => A[19].IN3
+A[20] => A[20].IN3
+A[21] => A[21].IN3
+A[22] => A[22].IN3
+A[23] => A[23].IN3
+A[24] => A[24].IN3
+A[25] => A[25].IN3
+A[26] => A[26].IN3
+A[27] => A[27].IN3
+A[28] => A[28].IN3
+A[29] => A[29].IN3
+A[30] => A[30].IN3
+A[31] => A[31].IN3
+B[0] => B[0].IN3
+B[1] => B[1].IN3
+B[2] => B[2].IN3
+B[3] => B[3].IN3
+B[4] => B[4].IN3
+B[5] => B[5].IN3
+B[6] => B[6].IN3
+B[7] => B[7].IN3
+B[8] => B[8].IN3
+B[9] => B[9].IN3
+B[10] => B[10].IN3
+B[11] => B[11].IN3
+B[12] => B[12].IN3
+B[13] => B[13].IN3
+B[14] => B[14].IN3
+B[15] => B[15].IN3
+B[16] => B[16].IN3
+B[17] => B[17].IN3
+B[18] => B[18].IN3
+B[19] => B[19].IN3
+B[20] => B[20].IN3
+B[21] => B[21].IN3
+B[22] => B[22].IN3
+B[23] => B[23].IN3
+B[24] => B[24].IN3
+B[25] => B[25].IN3
+B[26] => B[26].IN3
+B[27] => B[27].IN3
+B[28] => B[28].IN3
+B[29] => B[29].IN3
+B[30] => B[30].IN3
+B[31] => B[31].IN3
+Result[0] <= XorGate:GEN_FA[0].XOR2.y
+Result[1] <= XorGate:GEN_FA[1].XOR2.y
+Result[2] <= XorGate:GEN_FA[2].XOR2.y
+Result[3] <= XorGate:GEN_FA[3].XOR2.y
+Result[4] <= XorGate:GEN_FA[4].XOR2.y
+Result[5] <= XorGate:GEN_FA[5].XOR2.y
+Result[6] <= XorGate:GEN_FA[6].XOR2.y
+Result[7] <= XorGate:GEN_FA[7].XOR2.y
+Result[8] <= XorGate:GEN_FA[8].XOR2.y
+Result[9] <= XorGate:GEN_FA[9].XOR2.y
+Result[10] <= XorGate:GEN_FA[10].XOR2.y
+Result[11] <= XorGate:GEN_FA[11].XOR2.y
+Result[12] <= XorGate:GEN_FA[12].XOR2.y
+Result[13] <= XorGate:GEN_FA[13].XOR2.y
+Result[14] <= XorGate:GEN_FA[14].XOR2.y
+Result[15] <= XorGate:GEN_FA[15].XOR2.y
+Result[16] <= XorGate:GEN_FA[16].XOR2.y
+Result[17] <= XorGate:GEN_FA[17].XOR2.y
+Result[18] <= XorGate:GEN_FA[18].XOR2.y
+Result[19] <= XorGate:GEN_FA[19].XOR2.y
+Result[20] <= XorGate:GEN_FA[20].XOR2.y
+Result[21] <= XorGate:GEN_FA[21].XOR2.y
+Result[22] <= XorGate:GEN_FA[22].XOR2.y
+Result[23] <= XorGate:GEN_FA[23].XOR2.y
+Result[24] <= XorGate:GEN_FA[24].XOR2.y
+Result[25] <= XorGate:GEN_FA[25].XOR2.y
+Result[26] <= XorGate:GEN_FA[26].XOR2.y
+Result[27] <= XorGate:GEN_FA[27].XOR2.y
+Result[28] <= XorGate:GEN_FA[28].XOR2.y
+Result[29] <= XorGate:GEN_FA[29].XOR2.y
+Result[30] <= XorGate:GEN_FA[30].XOR2.y
+Result[31] <= XorGate:GEN_FA[31].XOR2.y
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[0].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[0].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[0].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[0].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[0].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[0].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[0].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[1].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[1].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[1].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[1].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[1].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[1].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[1].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[2].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[2].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[2].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[2].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[2].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[2].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[2].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[3].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[3].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[3].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[3].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[3].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[3].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[3].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[4].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[4].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[4].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[4].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[4].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[4].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[4].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[5].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[5].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[5].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[5].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[5].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[5].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[5].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[6].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[6].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[6].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[6].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[6].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[6].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[6].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[7].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[7].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[7].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[7].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[7].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[7].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[7].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[8].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[8].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[8].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[8].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[8].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[8].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[8].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[9].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[9].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[9].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[9].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[9].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[9].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[9].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[10].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[10].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[10].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[10].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[10].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[10].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[10].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[11].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[11].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[11].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[11].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[11].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[11].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[11].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[12].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[12].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[12].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[12].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[12].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[12].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[12].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[13].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[13].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[13].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[13].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[13].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[13].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[13].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[14].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[14].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[14].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[14].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[14].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[14].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[14].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[15].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[15].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[15].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[15].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[15].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[15].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[15].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[16].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[16].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[16].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[16].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[16].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[16].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[16].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[17].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[17].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[17].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[17].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[17].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[17].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[17].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[18].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[18].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[18].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[18].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[18].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[18].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[18].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[19].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[19].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[19].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[19].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[19].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[19].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[19].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[20].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[20].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[20].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[20].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[20].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[20].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[20].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[21].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[21].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[21].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[21].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[21].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[21].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[21].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[22].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[22].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[22].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[22].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[22].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[22].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[22].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[23].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[23].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[23].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[23].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[23].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[23].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[23].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[24].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[24].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[24].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[24].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[24].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[24].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[24].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[25].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[25].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[25].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[25].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[25].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[25].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[25].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[26].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[26].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[26].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[26].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[26].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[26].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[26].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[27].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[27].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[27].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[27].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[27].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[27].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[27].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[28].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[28].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[28].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[28].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[28].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[28].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[28].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[29].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[29].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[29].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[29].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[29].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[29].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[29].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[30].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[30].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[30].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[30].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[30].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[30].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[30].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[31].XOR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|XorGate:GEN_FA[31].XOR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[31].AND1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[31].AND2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|AndGate:GEN_FA[31].AND3
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[31].OR1
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mul32_wave_tb|Mul32:dut|RCA:add_rca|OrGate:GEN_FA[31].OR2
+a[0] => y.IN0
+b[0] => y.IN1
+y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
