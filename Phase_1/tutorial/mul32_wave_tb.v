@@ -10,24 +10,25 @@ module mul32_wave_tb;
     reg  [31:0] B;
 
     wire done;
-    wire [31:0] PROD;
+    wire [63:0] PROD;
 
-    reg  [31:0] RESULT_REG;
+    reg  [63:0] RESULT_REG;
 
-    Mul32 dut (
+
+	Mul32 dut (
         .clock(clock),
         .clear(clear),
         .start(start),
         .A(A),
         .B(B),
         .done(done),
-        .Result(PROD)
+        .Result(PROD)  // Connects 64-bit output to 64-bit wire
     );
 
     // Bounded clock: 1000 toggles = 500 full cycles
     initial begin
         clock = 1'b0;
-        repeat (1000) begin
+        repeat (2000) begin
             #5 clock = ~clock;
         end
         $stop;
@@ -41,7 +42,7 @@ module mul32_wave_tb;
         B = 32'b0;
         RESULT_REG = 32'b0;
 
-        // release reset after 2 rising edges
+        // Release reset
         repeat (2) @(posedge clock);
         clear = 1'b0;
 
@@ -51,29 +52,35 @@ module mul32_wave_tb;
         A = 32'd3; B = 32'd7;
         @(posedge clock); start = 1'b1;
         @(posedge clock); start = 1'b0;
-        repeat (40) @(posedge clock);
+        
+        // Wait for done signal instead of hardcoded delay
+        @(posedge done); 
         RESULT_REG = PROD;
+        $display("Test 1 (3 * 7): Expected 21, Got %d", $signed(PROD));
 
         // -------------------------
         // Test 2: 12 * 12 = 144
         // -------------------------
+        @(posedge clock); // spacing
         A = 32'd12; B = 32'd12;
         @(posedge clock); start = 1'b1;
         @(posedge clock); start = 1'b0;
-        repeat (40) @(posedge clock);
+        
+        @(posedge done);
         RESULT_REG = PROD;
+        $display("Test 2 (12 * 12): Expected 144, Got %d", $signed(PROD));
 
         // -------------------------
-        // Test 3: FFFFFFFF * 2 => low32 = FFFFFFFE
+        // Test 3: -1 * 2 = -2 (Using hex FFFFFFFF for -1)
         // -------------------------
-        A = 32'hFFFFFFFF; B = 32'd2;
+        @(posedge clock);
+        A = -32'd1; B = 32'd2; // Verilog handles the hex conversion for -1
         @(posedge clock); start = 1'b1;
         @(posedge clock); start = 1'b0;
-        repeat (40) @(posedge clock);
+        
+        @(posedge done);
         RESULT_REG = PROD;
-
-        // give 1 extra cycle so you clearly see the last update
-        @(posedge clock);
+        $display("Test 3 (-1 * 2): Expected -2, Got %d", $signed(PROD));
 
         $stop;
     end

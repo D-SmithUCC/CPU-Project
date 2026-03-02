@@ -1,0 +1,62 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /Phase1_DataPath_tb/clock
+add wave -noupdate /Phase1_DataPath_tb/clear
+add wave -noupdate /Phase1_DataPath_tb/alu_ctrl
+add wave -noupdate /Phase1_DataPath_tb/c_val
+add wave -noupdate /Phase1_DataPath_tb/r2_oe
+add wave -noupdate /Phase1_DataPath_tb/r5_oe
+add wave -noupdate /Phase1_DataPath_tb/r6_oe
+add wave -noupdate /Phase1_DataPath_tb/zlo_oe
+add wave -noupdate /Phase1_DataPath_tb/c_oe
+add wave -noupdate /Phase1_DataPath_tb/r2_ld
+add wave -noupdate /Phase1_DataPath_tb/r5_ld
+add wave -noupdate /Phase1_DataPath_tb/r6_ld
+add wave -noupdate /Phase1_DataPath_tb/y_ld
+add wave -noupdate /Phase1_DataPath_tb/zlo_ld
+add wave -noupdate /Phase1_DataPath_tb/alu_done
+add wave -noupdate /Phase1_DataPath_tb/bus_check
+add wave -noupdate /Phase1_DataPath_tb/DUT/R2/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/R6/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/R5/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/ZLO/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/Y/q
+add wave -noupdate /Phase1_DataPath_tb/clock
+add wave -noupdate /Phase1_DataPath_tb/clear
+add wave -noupdate /Phase1_DataPath_tb/alu_ctrl
+add wave -noupdate /Phase1_DataPath_tb/c_val
+add wave -noupdate /Phase1_DataPath_tb/r2_oe
+add wave -noupdate /Phase1_DataPath_tb/r5_oe
+add wave -noupdate /Phase1_DataPath_tb/r6_oe
+add wave -noupdate /Phase1_DataPath_tb/zlo_oe
+add wave -noupdate /Phase1_DataPath_tb/c_oe
+add wave -noupdate /Phase1_DataPath_tb/r2_ld
+add wave -noupdate /Phase1_DataPath_tb/r5_ld
+add wave -noupdate /Phase1_DataPath_tb/r6_ld
+add wave -noupdate /Phase1_DataPath_tb/y_ld
+add wave -noupdate /Phase1_DataPath_tb/zlo_ld
+add wave -noupdate /Phase1_DataPath_tb/alu_done
+add wave -noupdate /Phase1_DataPath_tb/bus_check
+add wave -noupdate /Phase1_DataPath_tb/DUT/R2/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/R6/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/R5/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/ZLO/q
+add wave -noupdate /Phase1_DataPath_tb/DUT/Y/q
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {115003 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 246
+configure wave -valuecolwidth 40
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {0 ps} {611482 ps}

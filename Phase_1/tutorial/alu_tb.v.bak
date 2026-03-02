@@ -1,0 +1,45 @@
+`timescale 1ns/1ps
+
+module alu_tb;
+    reg clock, clear;
+    reg [31:0] A, B;
+    reg [12:0] ctrl;
+    wire [63:0] Result;
+    wire done;
+
+    ALU uut (clock, clear, A, B, ctrl, Result, done);
+
+    initial begin
+        clock = 0;
+        forever #5 clock = ~clock;
+    end
+
+    initial begin
+        clear = 1; ctrl = 0; A = 0; B = 0;
+        #20 clear = 0;
+
+        // --- Test ADD ---
+        A = 32'd10; B = 32'd20; ctrl[0] = 1; #10;
+        $display("ADD: 10+20 = %d", Result[31:0]); ctrl[0] = 0;
+
+        // --- Test SUB ---
+        A = 32'd50; B = 32'd15; ctrl[1] = 1; #10;
+        $display("SUB: 50-15 = %d", Result[31:0]); ctrl[1] = 0;
+
+        // --- Test AND ---
+        A = 32'hFFFF0000; B = 32'hF0F0F0F0; ctrl[4] = 1; #10;
+        $display("AND: Result = %h", Result[31:0]); ctrl[4] = 0;
+
+        // --- Test SHL ---
+        A = 32'd1; B = 32'd4; ctrl[10] = 1; #10;
+        $display("SHL: 1 << 4 = %h", Result[31:0]); ctrl[10] = 0;
+
+        // --- Test DIV (Sequential) ---
+        A = 32'd20; B = 32'd3; ctrl[3] = 1;
+        wait(done); #5;
+        $display("DIV: 20/3 = Q:%d, R:%d", Result[31:0], Result[63:32]);
+        ctrl[3] = 0;
+
+        #20 $stop;
+    end
+endmodule

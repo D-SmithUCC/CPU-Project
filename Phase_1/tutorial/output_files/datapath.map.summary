@@ -1,7 +1,7 @@
-Analysis & Elaboration Status : Successful - Thu Feb 05 10:59:42 2026
+Analysis & Elaboration Status : Successful - Sun Mar 01 14:40:42 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : datapath
-Top-level Entity Name : mul32_wave_tb
+Top-level Entity Name : DataPath
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

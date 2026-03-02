@@ -12,91 +12,287 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/RCA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:00 on Feb 05,2026
+# Start time: 16:02:33 on Mar 01,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/RCA.v 
 # -- Compiling module RCA
 # 
 # Top level modules:
 # 	RCA
-# End time: 11:00:00 on Feb 05,2026, Elapsed time: 0:00:00
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:34 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v 
+# -- Compiling module edgeRegister
+# 
+# Top level modules:
+# 	edgeRegister
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:34 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v 
+# -- Compiling module BiDirectionalBus
+# 
+# Top level modules:
+# 	BiDirectionalBus
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:34 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v 
+# -- Compiling module DataPath
+# 
+# Top level modules:
+# 	DataPath
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/XorGate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:00 on Feb 05,2026
+# Start time: 16:02:34 on Mar 01,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/XorGate.v 
 # -- Compiling module XorGate
 # 
 # Top level modules:
 # 	XorGate
-# End time: 11:00:00 on Feb 05,2026, Elapsed time: 0:00:00
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/OrGate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:00 on Feb 05,2026
+# Start time: 16:02:34 on Mar 01,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/OrGate.v 
 # -- Compiling module OrGate
 # 
 # Top level modules:
 # 	OrGate
-# End time: 11:00:00 on Feb 05,2026, Elapsed time: 0:00:00
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:01 on Feb 05,2026
+# Start time: 16:02:34 on Mar 01,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v 
 # -- Compiling module AndGate
 # 
 # Top level modules:
 # 	AndGate
-# End time: 11:00:01 on Feb 05,2026, Elapsed time: 0:00:00
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:34 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v 
+# -- Compiling module NotGate
+# 
+# Top level modules:
+# 	NotGate
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:34 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v 
+# -- Compiling module Sub32
+# 
+# Top level modules:
+# 	Sub32
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:01 on Feb 05,2026
+# Start time: 16:02:34 on Mar 01,2026
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v 
 # -- Compiling module Mul32
 # 
 # Top level modules:
 # 	Mul32
-# End time: 11:00:01 on Feb 05,2026, Elapsed time: 0:00:00
+# End time: 16:02:34 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:01 on Feb 05,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v 
-# -- Compiling module mul32_wave_tb
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v 
+# -- Compiling module RCA32_Cout
 # 
 # Top level modules:
-# 	mul32_wave_tb
-# End time: 11:00:01 on Feb 05,2026, Elapsed time: 0:00:00
+# 	RCA32_Cout
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 11:00:01 on Feb 05,2026
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v 
-# -- Compiling module mul32_wave_tb
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v 
+# -- Compiling module Neg32
 # 
 # Top level modules:
-# 	mul32_wave_tb
-# End time: 11:00:01 on Feb 05,2026, Elapsed time: 0:00:00
+# 	Neg32
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v 
+# -- Compiling module Abs32
+# 
+# Top level modules:
+# 	Abs32
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v 
+# -- Compiling module Add33
+# 
+# Top level modules:
+# 	Add33
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v 
+# -- Compiling module Neg33
+# 
+# Top level modules:
+# 	Neg33
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v 
+# -- Compiling module Div32_Signed_NonRestoring
+# 
+# Top level modules:
+# 	Div32_Signed_NonRestoring
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v 
+# -- Compiling module SHR
+# 
+# Top level modules:
+# 	SHR
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v 
+# -- Compiling module SHRA
+# 
+# Top level modules:
+# 	SHRA
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v 
+# -- Compiling module SHL
+# 
+# Top level modules:
+# 	SHL
+# End time: 16:02:35 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:35 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v 
+# -- Compiling module ROR
+# 
+# Top level modules:
+# 	ROR
+# End time: 16:02:36 on Mar 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:36 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v 
+# -- Compiling module ROL
+# 
+# Top level modules:
+# 	ROL
+# End time: 16:02:36 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:36 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:02:36 on Mar 01,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mul32_wave_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mul32_wave_tb 
-# Start time: 11:00:01 on Feb 05,2026
-# Loading work.mul32_wave_tb
-# Loading work.Mul32
+# vlog -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial {C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:02:36 on Mar 01,2026
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial" C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v 
+# -- Compiling module Phase1_DataPath_tb
+# 
+# Top level modules:
+# 	Phase1_DataPath_tb
+# End time: 16:02:36 on Mar 01,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  Phase1_DataPath_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" Phase1_DataPath_tb 
+# Start time: 16:02:36 on Mar 01,2026
+# Loading work.Phase1_DataPath_tb
+# Loading work.DataPath
+# Loading work.ALU
+# Loading work.RCA32_Cout
+# Loading work.Sub32
 # Loading work.RCA
+# Loading work.Mul32
+# Loading work.SHL
+# Loading work.Neg33
+# Loading work.Add33
 # Loading work.XorGate
-# Loading work.AndGate
+# Loading work.SHR
 # Loading work.OrGate
+# Loading work.Div32_Signed_NonRestoring
+# Loading work.Abs32
+# Loading work.Neg32
+# Loading work.NotGate
+# Loading work.AndGate
+# Loading work.SHRA
+# Loading work.ROR
+# Loading work.ROL
+# Loading work.edgeRegister
+# Loading work.BiDirectionalBus
+# ** Warning: (vsim-3015) C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v(21): [PCDPC] - Port size (64) does not match connection size (32) for port 'Result'. The port definition is at: C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /Phase1_DataPath_tb/DUT/central_alu/mul File: C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v
 # 
 # add wave *
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 500 ns
-# End time: 11:22:19 on Feb 05,2026, Elapsed time: 0:22:18
-# Errors: 0, Warnings: 0
+# run 2500 ns
+# ADD: 0x34 + 0x45 = 00000079 (expected 00000079)
+# SUB: 0x34 - 0x45 = ffffffef (expected FFFFFEF)
+# MUL LO: 00000000 (expected 00000006)
+# MUL HI: 00000000 (expected 00000000)
+# DIV: 0x9 / 0x2 = 00000000 (expected 4R1)
+# AND: 0x34 & 0x45 = 00000004 (expected 00000004)
+# OR: 0x34 | 0x45 = 00000075 (expected 00000075)
+# NOT: ~4 = 11111111111111111111111110001010
+# NEG: -4 = 11111111111111111111111110001011
+# SHR: 25 >> 2 = 00000000000000000000000000000010
+# SHRA: 25 >>> 2 = 00000000000000000000000000000010
+# SHL: 25 << 2 = 00000000000000000000000000100100
+# ROR: 25 rot-right 2 = 01000000000000000000000000000010
+# ROL: 25 rot-left 2 = 00000000000000000000000000100100
+# ** Note: $stop    : C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v(246)
+#    Time: 727 ns  Iteration: 0  Instance: /Phase1_DataPath_tb
+# Break in Module Phase1_DataPath_tb at C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v line 246
+# End time: 16:03:05 on Mar 01,2026, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 1

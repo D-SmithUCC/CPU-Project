@@ -1,5 +1,5 @@
 Flow report for datapath
-Thu Feb 05 10:59:42 2026
+Sun Mar 01 14:40:42 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,10 +40,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Flow Summary                                                              ;
 +-----------------------------+---------------------------------------------+
-; Flow Status                 ; Successful - Thu Feb 05 10:59:42 2026       ;
+; Flow Status                 ; Successful - Sun Mar 01 14:40:42 2026       ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; datapath                                    ;
-; Top-level Entity Name       ; mul32_wave_tb                               ;
+; Top-level Entity Name       ; DataPath                                    ;
 ; Family                      ; Cyclone V                                   ;
 ; Device                      ; 5CEBA4F23C7                                 ;
 ; Timing Models               ; Final                                       ;
@@ -62,58 +62,92 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/05/2026 10:59:30 ;
+; Start date & time ; 03/01/2026 14:40:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; datapath            ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                           ;
-+--------------------------------------+----------------------------------------+---------------+---------------+----------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id                 ;
-+--------------------------------------+----------------------------------------+---------------+---------------+----------------------------+
-; COMPILER_SIGNATURE_ID                ; 1097584103218.177030716906276          ; --            ; --            ; --                         ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; sub32_wave_tb              ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; tutorial_tb                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; div_signed_nonrestoring_tb ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; rca_wave_tb                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; mul32_wave_tb              ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mul32_wave_tb                          ; --            ; --            ; eda_simulation             ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --            ; eda_simulation             ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --                         ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_FILE                  ; sub32_wave_tb.v                        ; --            ; --            ; sub32_wave_tb              ;
-; EDA_TEST_BENCH_FILE                  ; tutorial_tb.v                          ; --            ; --            ; tutorial_tb                ;
-; EDA_TEST_BENCH_FILE                  ; div_signed_nonrestoring_tb.v           ; --            ; --            ; div_signed_nonrestoring_tb ;
-; EDA_TEST_BENCH_FILE                  ; rca_wave_tb.v                          ; --            ; --            ; rca_wave_tb                ;
-; EDA_TEST_BENCH_FILE                  ; mul32_wave_tb.v                        ; --            ; --            ; mul32_wave_tb              ;
-; EDA_TEST_BENCH_MODULE_NAME           ; sub32_wave_tb                          ; --            ; --            ; sub32_wave_tb              ;
-; EDA_TEST_BENCH_MODULE_NAME           ; tutorial_tb                            ; --            ; --            ; tutorial_tb                ;
-; EDA_TEST_BENCH_MODULE_NAME           ; div_signed_nonrestoring_tb             ; --            ; --            ; div_signed_nonrestoring_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; rca_wave_tb                            ; --            ; --            ; rca_wave_tb                ;
-; EDA_TEST_BENCH_MODULE_NAME           ; mul32_wave_tb                          ; --            ; --            ; mul32_wave_tb              ;
-; EDA_TEST_BENCH_NAME                  ; tutorial_tb                            ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_NAME                  ; rca_wave_tb                            ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_NAME                  ; sub32_wave_tb                          ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_NAME                  ; mul32_wave_tb                          ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_NAME                  ; div_signed_nonrestoring_tb             ; --            ; --            ; eda_simulation             ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --            ; sub32_wave_tb              ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --            ; tutorial_tb                ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --            ; div_signed_nonrestoring_tb ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --            ; rca_wave_tb                ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --            ; mul32_wave_tb              ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation             ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --                         ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --                         ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; mul32_wave_tb ; Top                        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; mul32_wave_tb ; Top                        ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; mul32_wave_tb ; Top                        ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --            ; --                         ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --                         ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --                         ;
-; TOP_LEVEL_ENTITY                     ; mul32_wave_tb                          ; datapath      ; --            ; --                         ;
-+--------------------------------------+----------------------------------------+---------------+---------------+----------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                         ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                 ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------------------+
+; COMPILER_SIGNATURE_ID                ; 1097584103218.177239401736908          ; --            ; --          ; --                         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; sub32_wave_tb              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; tutorial_tb                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; div_signed_nonrestoring_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; Phase1_DataPath_tb         ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; ror_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; rca_wave_tb                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shr_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; rol_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; mul32_wave_tb              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shl_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; alu_tb                     ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; shra_tb                    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Phase1_DataPath_tb                     ; --            ; --          ; eda_simulation             ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation             ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                         ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_FILE                  ; sub32_wave_tb.v                        ; --            ; --          ; sub32_wave_tb              ;
+; EDA_TEST_BENCH_FILE                  ; tutorial_tb.v                          ; --            ; --          ; tutorial_tb                ;
+; EDA_TEST_BENCH_FILE                  ; div_signed_nonrestoring_tb.v           ; --            ; --          ; div_signed_nonrestoring_tb ;
+; EDA_TEST_BENCH_FILE                  ; Phase1_DataPath_tb.v                   ; --            ; --          ; Phase1_DataPath_tb         ;
+; EDA_TEST_BENCH_FILE                  ; ror_tb.v                               ; --            ; --          ; ror_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; rca_wave_tb.v                          ; --            ; --          ; rca_wave_tb                ;
+; EDA_TEST_BENCH_FILE                  ; shr_tb.v                               ; --            ; --          ; shr_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; rol_tb.v                               ; --            ; --          ; rol_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; mul32_wave_tb.v                        ; --            ; --          ; mul32_wave_tb              ;
+; EDA_TEST_BENCH_FILE                  ; shl_tb.v                               ; --            ; --          ; shl_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; alu_tb.v                               ; --            ; --          ; alu_tb                     ;
+; EDA_TEST_BENCH_FILE                  ; shra_tb.v                              ; --            ; --          ; shra_tb                    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; sub32_wave_tb                          ; --            ; --          ; sub32_wave_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tutorial_tb                            ; --            ; --          ; tutorial_tb                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; div_signed_nonrestoring_tb             ; --            ; --          ; div_signed_nonrestoring_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Phase1_DataPath_tb                     ; --            ; --          ; Phase1_DataPath_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ror_tb                                 ; --            ; --          ; ror_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; rca_wave_tb                            ; --            ; --          ; rca_wave_tb                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shr_tb                                 ; --            ; --          ; shr_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; rol_tb                                 ; --            ; --          ; rol_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; mul32_wave_tb                          ; --            ; --          ; mul32_wave_tb              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shl_tb                                 ; --            ; --          ; shl_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; alu_tb                                 ; --            ; --          ; alu_tb                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; shra_tb                                ; --            ; --          ; shra_tb                    ;
+; EDA_TEST_BENCH_NAME                  ; tutorial_tb                            ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; rca_wave_tb                            ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; sub32_wave_tb                          ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; mul32_wave_tb                          ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; div_signed_nonrestoring_tb             ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; shr_tb                                 ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; shra_tb                                ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; shl_tb                                 ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; ror_tb                                 ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; rol_tb                                 ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; alu_tb                                 ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_NAME                  ; Phase1_DataPath_tb                     ; --            ; --          ; eda_simulation             ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; sub32_wave_tb              ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; tutorial_tb                ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; div_signed_nonrestoring_tb ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 2500 ns                                ; --            ; --          ; Phase1_DataPath_tb         ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; ror_tb                     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; rca_wave_tb                ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; shr_tb                     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; rol_tb                     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; mul32_wave_tb              ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; shl_tb                     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; alu_tb                     ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                 ; --            ; --          ; shra_tb                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                         ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                         ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                        ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; DataPath    ; Top                        ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                         ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                         ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                         ;
++--------------------------------------+----------------------------------------+---------------+-------------+----------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -121,8 +155,8 @@ refer to the applicable agreement for further details.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:13     ; 1.0                     ; 4773 MB             ; 00:00:24                           ;
-; Total                  ; 00:00:13     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Elaboration ; 00:00:25     ; 1.0                     ; 4921 MB             ; 00:00:31                           ;
+; Total                  ; 00:00:25     ; --                      ; --                  ; 00:00:31                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

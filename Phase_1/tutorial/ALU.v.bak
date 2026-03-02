@@ -1,0 +1,69 @@
+// ============================================================
+// ALU (Arithmetic Logic Unit)
+// ------------------------------------------------------------
+// Combines all Phase 1 operations:
+// Add, Sub, Mul, Div, And, Or, Not, Neg, SHR, SHRA, SHL, ROR, ROL
+// ============================================================
+
+module ALU (
+    input  wire        clock,
+    input  wire        clear,
+    input  wire [31:0] A,          // Input from Y register
+    input  wire [31:0] B,          // Input from Bus
+    input  wire [12:0] ctrl,       // Control signals (One-hot for simplicity)
+    output reg  [63:0] Result,     // 64-bit result for ZHI/ZLO
+    output wire        done        // Signal for multi-cycle ops (Mul/Div)
+);
+
+    // Control indices (Example mapping)
+    localparam ADD=0, SUB=1, MUL=2, DIV=3, AND=4, OR=5, 
+               NOT=6, NEG=7, SHR=8, SHRA=9, SHL=10, ROR=11, ROL=12;
+
+    // Operation Results
+    wire [31:0] sum, diff, and_res, or_res, not_res, neg_res;
+    wire [31:0] shr_res, shra_res, shl_res, ror_res, rol_res;
+    wire [31:0] mul_res, div_q, div_r;
+    wire        mul_done, div_done, div0;
+
+    // Instantiate Sub-modules
+    RCA32_Cout adder (.A(A), .B(B), .Cin(1'b0), .Sum(sum), .Cout());
+    Sub32      sub   (.A(A), .B(B), .Result(diff));
+    Mul32      mul   (.clock(clock), .clear(clear), .start(ctrl[MUL]), .A(A), .B(B), .done(mul_done), .Result(mul_res));
+    Div32_Signed_NonRestoring div (.clock(clock), .clear(clear), .start(ctrl[DIV]), .dividend(A), .divisor(B), .done(div_done), .div0(div0), .quotient(div_q), .remainder(div_r));
+    
+    AndGate #(.WIDTH(32)) andg (.a(A), .b(B), .y(and_res));
+    OrGate  #(.WIDTH(32)) org  (.a(A), .b(B), .y(or_res));
+    NotGate #(.WIDTH(32)) notg (.a(B),        .y(not_res)); // NOT usually on B (the Bus value)
+    Neg32                 neg  (.x(B),        .y(neg_res)); 
+
+    SHR  shr_u  (.A(A), .B(B), .Result(shr_res));
+    SHRA shra_u (.A(A), .B(B), .Result(shra_res));
+    SHL  shl_u  (.A(A), .B(B), .Result(shl_res));
+    ROR  ror_u  (.A(A), .B(B), .Result(ror_res));
+    ROL  rol_u  (.A(A), .B(B), .Result(rol_res));
+
+    // Done signal for sequential operations
+    assign done = ctrl[MUL] ? mul_done : (ctrl[DIV] ? div_done : 1'b1);
+
+    // Muxing the Output to Result [63:0]
+    always @(*) begin
+        Result = 64'b0;
+        case (1'b1)
+            ctrl[ADD]:  Result[31:0] = sum;
+            ctrl[SUB]:  Result[31:0] = diff;
+            ctrl[MUL]:  Result[31:0] = mul_res; // Lower 32 bits for Phase 1
+            ctrl[DIV]:  begin Result[31:0] = div_q; Result[63:32] = div_r; end
+            ctrl[AND]:  Result[31:0] = and_res;
+            ctrl[OR]:   Result[31:0] = or_res;
+            ctrl[NOT]:  Result[31:0] = not_res;
+            ctrl[NEG]:  Result[31:0] = neg_res;
+            ctrl[SHR]:  Result[31:0] = shr_res;
+            ctrl[SHRA]: Result[31:0] = shra_res;
+            ctrl[SHL]:  Result[31:0] = shl_res;
+            ctrl[ROR]:  Result[31:0] = ror_res;
+            ctrl[ROL]:  Result[31:0] = rol_res;
+            default:    Result = 64'b0;
+        endcase
+    end
+
+endmodule

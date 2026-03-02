@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CEBA4F23C7
-set_global_assignment -name TOP_LEVEL_ENTITY mul32_wave_tb
+set_global_assignment -name TOP_LEVEL_ENTITY DataPath
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:04:50  JANUARY 18, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
@@ -52,7 +52,7 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH mul32_wave_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH Phase1_DataPath_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME tutorial_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tutorial_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id tutorial_tb
@@ -69,6 +69,54 @@ set_global_assignment -name EDA_TEST_BENCH_NAME mul32_wave_tb -section_id eda_si
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id mul32_wave_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id mul32_wave_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME mul32_wave_tb -section_id mul32_wave_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME div_signed_nonrestoring_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id div_signed_nonrestoring_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME div_signed_nonrestoring_tb -section_id div_signed_nonrestoring_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id div_signed_nonrestoring_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME shr_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shr_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id shr_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shr_tb -section_id shr_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME shra_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shra_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id shra_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shra_tb -section_id shra_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME shl_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id shl_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id shl_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME shl_tb -section_id shl_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME ror_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ror_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id ror_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ror_tb -section_id ror_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME rol_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id rol_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id rol_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME rol_tb -section_id rol_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME alu_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME alu_tb -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE tutorial_tb.v -section_id tutorial_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE rca_wave_tb.v -section_id rca_wave_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE sub32_wave_tb.v -section_id sub32_wave_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE mul32_wave_tb.v -section_id mul32_wave_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE div_signed_nonrestoring_tb.v -section_id div_signed_nonrestoring_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE shr_tb.v -section_id shr_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE shra_tb.v -section_id shra_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE shl_tb.v -section_id shl_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ror_tb.v -section_id ror_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE rol_tb.v -section_id rol_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE alu_tb.v -section_id alu_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME Phase1_DataPath_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Phase1_DataPath_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "2500 ns" -section_id Phase1_DataPath_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Phase1_DataPath_tb -section_id Phase1_DataPath_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE Phase1_DataPath_tb.v -section_id Phase1_DataPath_tb
+set_global_assignment -name VHDL_FILE RCAdd_tb.vhd
+set_global_assignment -name VHDL_FILE RCAdd.vhd
+set_global_assignment -name VERILOG_FILE MDR_tb.v
+set_global_assignment -name VERILOG_FILE MDR.v
 set_global_assignment -name VERILOG_FILE RCA.v
 set_global_assignment -name VERILOG_FILE edgeRegister.v
 set_global_assignment -name VERILOG_FILE BiDirectionalBus.v
@@ -94,16 +142,20 @@ set_global_assignment -name VERILOG_FILE Add33.v
 set_global_assignment -name VERILOG_FILE Neg33.v
 set_global_assignment -name VERILOG_FILE Div32_Signed_NonRestoring.v
 set_global_assignment -name VERILOG_FILE div_signed_nonrestoring_tb.v
-set_global_assignment -name EDA_TEST_BENCH_NAME div_signed_nonrestoring_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id div_signed_nonrestoring_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME div_signed_nonrestoring_tb -section_id div_signed_nonrestoring_tb
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id div_signed_nonrestoring_tb
+set_global_assignment -name VERILOG_FILE SHR.v
+set_global_assignment -name VERILOG_FILE shr_tb.v
+set_global_assignment -name VERILOG_FILE SHRA.v
+set_global_assignment -name VERILOG_FILE shra_tb.v
+set_global_assignment -name VERILOG_FILE SHL.v
+set_global_assignment -name VERILOG_FILE shl_tb.v
+set_global_assignment -name VERILOG_FILE ROR.v
+set_global_assignment -name VERILOG_FILE ror_tb.v
+set_global_assignment -name VERILOG_FILE ROL.v
+set_global_assignment -name VERILOG_FILE rol_tb.v
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name VERILOG_FILE alu_tb.v
+set_global_assignment -name VERILOG_FILE Phase1_DataPath_tb.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_FILE tutorial_tb.v -section_id tutorial_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE rca_wave_tb.v -section_id rca_wave_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE sub32_wave_tb.v -section_id sub32_wave_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE mul32_wave_tb.v -section_id mul32_wave_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE div_signed_nonrestoring_tb.v -section_id div_signed_nonrestoring_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

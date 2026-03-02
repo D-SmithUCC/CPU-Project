@@ -8,45 +8,206 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/intelFPGA_lite/18.1/elec374/tutorial/simulation/modelsim
-vAndGate
-Z1 !s110 1770307201
+vAbs32
+Z1 !s110 1772398955
 !i10b 1
-!s100 W6_E60TzD3hFV<X_LRe6d0
-I_YG84]<jgQ`Chc^i>I;X;1
+!s100 HQf<?J[9gJFY:_2IL;eTP2
+IWIgjOOXOe9SP4Ud_SaYH=1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1769459382
-8C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v
-FC:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v
+w1770236430
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1770307201.000000
-!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v|
+Z4 !s108 1772398955.000000
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Abs32.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/intelFPGA_lite/18.1/elec374/tutorial
 Z7 tCvgOpt 0
-n@and@gate
-vMul32
+n@abs32
+vAdd33
 R1
 !i10b 1
-!s100 IjIY_dbEK4jML3<3ke=DG0
-IWO8aaiJh@AgJH_f[9Qn4i2
+!s100 JVJED:5dW;jcQa0XNGd0?1
+ISL5C50^B6CGPoc9?d7G0:2
 R2
 R0
-w1769460761
-8C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v
-FC:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v
-L0 10
+w1770236453
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v
+L0 1
 R3
 r1
 !s85 0
 31
 R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Add33.v|
+!i113 1
+R5
+R6
+R7
+n@add33
+vALU
+Z8 !s110 1772398956
+!i10b 1
+!s100 h5i4j[Sc`V84@g^jkPN6:1
+Iz_5[g3nBQ^oYk8ik?Yoga1
+R2
+R0
+w1770402496
+8C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1772398956.000000
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/ALU.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@u
+vAndGate
+Z10 !s110 1772398954
+!i10b 1
+!s100 W6_E60TzD3hFV<X_LRe6d0
+I_YG84]<jgQ`Chc^i>I;X;1
+R2
+R0
+w1769459382
+8C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z11 !s108 1772398954.000000
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/AndGate.v|
+!i113 1
+R5
+R6
+R7
+n@and@gate
+vBiDirectionalBus
+R10
+!i10b 1
+!s100 hTBT:OQFfH^4i3Xl=@F=@3
+IleV6Y>_>cI1jLb2FkC[Sb3
+R2
+R0
+w1769456665
+8C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v
+L0 9
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/BiDirectionalBus.v|
+!i113 1
+R5
+R6
+R7
+n@bi@directional@bus
+vDataPath
+R10
+!i10b 1
+!s100 Z637EojD48<U2QDC[]ho80
+I@^e_eizB@`Fbaj;N4d1zY2
+R2
+R0
+w1770405100
+8C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/DataPath.v|
+!i113 1
+R5
+R6
+R7
+n@data@path
+vDiv32_Signed_NonRestoring
+R1
+!i10b 1
+!s100 `9`fLP4f7mMKjQXAhn2j;1
+I1jf[9aJHoB9WC@?gW]LmA0
+R2
+R0
+w1770238570
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v
+L0 13
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Div32_Signed_NonRestoring.v|
+!i113 1
+R5
+R6
+R7
+n@div32_@signed_@non@restoring
+vedgeRegister
+R10
+!i10b 1
+!s100 6^RNa>i3^4E?E49@?Ol1K1
+Il76[60;c:0jVn2:2X78R<0
+R2
+R0
+w1768922486
+8C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v
+L0 10
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/edgeRegister.v|
+!i113 1
+R5
+R6
+R7
+nedge@register
+vMul32
+R10
+!i10b 1
+!s100 PBQK^J7LUQQUUa;PgA=od1
+I<b2h?A<L8[1:j=UW`g]OQ3
+R2
+R0
+w1770664006
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v
+L0 3
+R3
+r1
+!s85 0
+31
+R11
 !s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Mul32.v|
 !i113 1
@@ -54,30 +215,77 @@ R5
 R6
 R7
 n@mul32
-vmul32_wave_tb
+vNeg32
 R1
 !i10b 1
-!s100 Z36RlG<W?G4cJ^C@]Ah1P0
-I50fHIU4X3`KDbZN8PZmIF2
+!s100 UCTdn6_73ZH;_llhVo4zb0
+IOU@H>2;j4c73k0M>S0bWm0
 R2
 R0
-w1769461554
-8C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v
-FC:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v
-L0 3
+w1770236407
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v
+L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/mul32_wave_tb.v|
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Neg32.v|
 !i113 1
 R5
 R6
 R7
+n@neg32
+vNeg33
+R1
+!i10b 1
+!s100 80mW>:23oTj8NNc4hZO0m2
+I9kNBo=2fMz6I5cCMDN0Ej2
+R2
+R0
+w1770236481
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Neg33.v|
+!i113 1
+R5
+R6
+R7
+n@neg33
+vNotGate
+R10
+!i10b 1
+!s100 T_nK8gICm@JT4ldTWe9XK2
+ILQ9I:O7^LhUML96]VgAfj0
+R2
+R0
+w1769459401
+8C:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/NotGate.v|
+!i113 1
+R5
+R6
+R7
+n@not@gate
 vOrGate
-Z8 !s110 1770307200
+R10
 !i10b 1
 !s100 CzPIKSezJhbJEU=4FeMm_1
 I3jk9jI7kfB<7Yk0J2lbmY2
@@ -91,7 +299,7 @@ R3
 r1
 !s85 0
 31
-Z9 !s108 1770307200.000000
+R11
 !s107 C:/intelFPGA_lite/18.1/elec374/tutorial/OrGate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/OrGate.v|
 !i113 1
@@ -99,8 +307,31 @@ R5
 R6
 R7
 n@or@gate
-vRCA
+vPhase1_DataPath_tb
 R8
+!i10b 1
+!s100 _:ea1N5>=KZVoXk[5ZN7D3
+INjz14QEYKFG?Z:o@i]5h?0
+R2
+R0
+w1772398611
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Phase1_DataPath_tb.v|
+!i113 1
+R5
+R6
+R7
+n@phase1_@data@path_tb
+vRCA
+!s110 1772398953
 !i10b 1
 !s100 FFb5@Xz99878[^FZgU=H13
 IPjPANe6aL:]nFO2MJU82T0
@@ -114,7 +345,7 @@ R3
 r1
 !s85 0
 31
-R9
+!s108 1772398953.000000
 !s107 C:/intelFPGA_lite/18.1/elec374/tutorial/RCA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/RCA.v|
 !i113 1
@@ -122,8 +353,169 @@ R5
 R6
 R7
 n@r@c@a
-vXorGate
+vRCA32_Cout
+R1
+!i10b 1
+!s100 :E[RVOPd;Rf=0B?hTiY6o2
+IX6]9[g@9mLjV=F_`Um^T>1
+R2
+R0
+w1770236381
+8C:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/RCA32_Cout.v|
+!i113 1
+R5
+R6
+R7
+n@r@c@a32_@cout
+vROL
 R8
+!i10b 1
+!s100 3lIZhe^37MZj_3o>UiTaI0
+I>H>]0IQ@1bbobKITnB]]H1
+R2
+R0
+w1770401231
+8C:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v
+L0 9
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/ROL.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@l
+vROR
+R8
+!i10b 1
+!s100 NW6`z:P]`bnOMR02EMKUf0
+Icg8_mM[c]_Eic770V?DKB2
+R2
+R0
+w1770400879
+8C:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/ROR.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@r
+vSHL
+R1
+!i10b 1
+!s100 dii8==hJ9oDGW5[P4ojo^2
+IMP4aQPY^IcA]W9k>o1OAL0
+R2
+R0
+w1770400636
+8C:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/SHL.v|
+!i113 1
+R5
+R6
+R7
+n@s@h@l
+vSHR
+R1
+!i10b 1
+!s100 `GEBK<ejLZdQ<QKikDUSo2
+IQ5Y1@FfgQlWee<EE_5mLZ3
+R2
+R0
+w1770399293
+8C:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/SHR.v|
+!i113 1
+R5
+R6
+R7
+n@s@h@r
+vSHRA
+R1
+!i10b 1
+!s100 JjX:ioK13N7S]8ZOiiGD;0
+Iz<8aBkUa^m7Y;;Bi9ePdQ3
+R2
+R0
+w1770399836
+8C:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/SHRA.v|
+!i113 1
+R5
+R6
+R7
+n@s@h@r@a
+vSub32
+R10
+!i10b 1
+!s100 70]]KFnHAc@j9W=C5^_g<2
+Ic4UE2BPCU_XQg@BT6Dj193
+R2
+R0
+w1769459803
+8C:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v
+FC:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v
+L0 1
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/Sub32.v|
+!i113 1
+R5
+R6
+R7
+n@sub32
+vXorGate
+R10
 !i10b 1
 !s100 eami;;CAoQjEzdd@nbe7B3
 IN4LIXZmL_C?d71WW9NH4C2
@@ -137,7 +529,7 @@ R3
 r1
 !s85 0
 31
-R9
+R11
 !s107 C:/intelFPGA_lite/18.1/elec374/tutorial/XorGate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/intelFPGA_lite/18.1/elec374/tutorial|C:/intelFPGA_lite/18.1/elec374/tutorial/XorGate.v|
 !i113 1
